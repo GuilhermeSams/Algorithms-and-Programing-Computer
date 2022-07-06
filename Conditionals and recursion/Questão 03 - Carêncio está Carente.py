@@ -29,5 +29,19 @@ Em python você pode utilizar a função math.sqrt(x) para retirar raiz quadrada
 Descrição dos Exemplos:
 No primeiro exemplo, a distância entre Carêncio e sua paquera é de aproximadamente 145m, por ser um valor entre 100 e
 200 a saída é a segunda frase."""
+import math
 
+x1 = int(input())
+y1 = int(input())
 
+x2 = int(input())
+y2 = int(input())
+
+distancia = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
+
+if distancia <= 100:
+    print("É o amor da minha vida!")
+elif 100 < distancia <= 200:
+    print("Talvez dê certo")
+elif distancia > 200:
+    print("Não vale a pena investir")
